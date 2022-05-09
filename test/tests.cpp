@@ -6,5 +6,5 @@ TEST(TEST1, ServedBuyers) {
 srand(time(nullptr));
 Supermarket* supermarket = new Supermarket(20, 40, 500, 5, 20, 1);
 supermarket->run();
-ASSERT_TRUE(result->ServedBuyers() == 20);
+ASSERT_TRUE(supermarket->ServedBuyers() == 20);
 }
