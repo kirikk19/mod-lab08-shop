@@ -6,5 +6,5 @@
 TEST(TEST1, TrueOrFalse) {
 srand(time(nullptr));
 Supermarket* supermarket = new Supermarket(20, 40, 500, 5, 20, 1);
-EXPECT_EQ(static_cast<int> (supermarket->RelativeThroughput()), text.getprefix());
+EXPECT_EQ(1, static_cast<int> (supermarket->RelativeThroughput()));
 }
