@@ -33,4 +33,3 @@ Supermarket* supermarket = new Supermarket(20, 40, 500, 5, 20, 1);
 supermarket->run();
 ASSERT_TRUE(static_cast<int>(supermarket->AbsoluteBandwidth()) == 0);
 }
-
