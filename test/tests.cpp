@@ -24,12 +24,12 @@ TEST(TEST4, RelativeThroughput) {
 srand(time(nullptr));
 Supermarket* supermarket = new Supermarket(20, 40, 500, 5, 20, 1);
 supermarket->run();
-ASSERT_TRUE(static_cast<int>(supermarket->RelativeThroughput()) == 0);
+ASSERT_TRUE(static_cast<int>(supermarket->RelativeThroughput()) == 1);
 }
 
 TEST(TEST5, AbsoluteBandwidth) {
 srand(time(nullptr));
 Supermarket* supermarket = new Supermarket(20, 40, 500, 5, 20, 1);
 supermarket->run();
-ASSERT_TRUE(static_cast<int>(supermarket->AbsoluteBandwidth()) == 0);
+ASSERT_TRUE(static_cast<int>(supermarket->AbsoluteBandwidth()) == 40);
 }
